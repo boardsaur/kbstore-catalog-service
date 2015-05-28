@@ -1,2 +1,2 @@
-# acme-catalog-service
-Acme Catalog Service
+# kbstore-catalog-service
+Keyboard Store Catalog Service
