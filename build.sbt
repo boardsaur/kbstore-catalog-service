@@ -2,7 +2,7 @@ enablePlugins(JavaAppPackaging)
 
 name         := """catalog-service"""
 organization := "com.kbstore"
-version      := "1.0." + sys.env.getOrElse("BUILD_NBR", "0")
+version      := "1.0." + sys.env.getOrElse("BUILD_NUMBER", "0")
 scalaVersion := "2.11.5"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
