@@ -1,3 +1,4 @@
+enablePlugins(JavaAppPackaging)
 enablePlugins(DockerPlugin)
 name         := """kbstore-catalog-service"""
 organization := "com.boardsaur"
