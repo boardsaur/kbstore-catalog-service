@@ -1,9 +1,10 @@
-enablePlugins(JavaAppPackaging)
-
-name         := """catalog-service"""
-organization := "com.kbstore"
-version      := "1.0." + sys.env.getOrElse("BUILD_NUMBER", "0")
+enablePlugins(DockerPlugin)
+name         := """kbstore-catalog-service"""
+organization := "com.boardsaur"
+version      := "1.0" + sys.env.get("BUILD_NUMBER").map(nbr => s".$nbr").getOrElse("")
 scalaVersion := "2.11.5"
+
+dockerExposedPorts := Seq(9001)
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
